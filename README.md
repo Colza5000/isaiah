@@ -1,2 +1,2 @@
-![Isaiah](app/isaiah.jpg){:height="36px" width="36px"}
+![Isaiah](app/isaiah.jpeg)
 Basic go wrapper to spin up webapp with docker
