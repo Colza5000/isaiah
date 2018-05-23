@@ -1,5 +1,3 @@
-![Isaiah](app/isaiah.jpeg)
-
 <p align="center">
   <img src="app/isaiah.jpeg">
 </p>
