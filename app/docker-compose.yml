@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  goapp:
+    image: golang:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./docker/webapp.go:/go/src/webapp.go
+    command: bash -c "go run /go/src/webapp.go"
