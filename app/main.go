@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
 	"syscall"
@@ -11,6 +12,8 @@ func main() {
 	if lookErr != nil {
 		panic(lookErr)
 	}
+
+	fmt.Println("Go to http://localhost:8080")
 
 	args := []string{"docker-compose", "up"}
 
