@@ -15,7 +15,7 @@ func main() {
 
 	fmt.Println("Go to http://localhost:8080")
 
-	args := []string{"docker-compose", "up"}
+	args := []string{"docker-compose", "-f", "../docker/docker-compose.yml", "up"}
 
 	env := os.Environ()
 
