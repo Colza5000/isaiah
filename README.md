@@ -1,7 +1,7 @@
 # Isaiah
 
 <p align="center">
-  <img src="app/isaiah.jpeg">
+  <img src="misc/isaiah.jpeg">
 </p>
 
 Basic go wrapper to spin up webapp with docker
