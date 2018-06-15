@@ -42,9 +42,8 @@ import (
 // 	}
 // }
 
-// func main() {
 func Teams(w http.ResponseWriter, r *http.Request) {
-	url := "http://api.football-data.org/v1/competitions/467/teams"
+	url := "http://api.football-data.org/v1/competitions/467/fixtures?matchday=1"
 	response, err := http.Get(url)
 	if err != nil {
 		log.Fatal(err)
@@ -58,7 +57,6 @@ func Teams(w http.ResponseWriter, r *http.Request) {
 
 	responseString := string(responseData)
 
-	// fmt.Println(responseString)
 	fmt.Fprint(w, responseString)
 }
 
