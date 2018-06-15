@@ -7,4 +7,5 @@ services:
       - "8080:8080"
     volumes:
       - ./webapp.go:/go/src/webapp.go
-    command: bash -c "go run /go/src/webapp.go"
+    working_dir: /go/src
+    command: go run webapp.go
