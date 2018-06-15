@@ -7,41 +7,6 @@ import (
 	"net/http"
 )
 
-// type WorldCupTeams struct {
-// 	Count int `json:"count"`
-// 	Teams []struct {
-// 		CrestURL         string      `json:"crestUrl"`
-// 		ID               int         `json:"id"`
-// 		Name             string      `json:"name"`
-// 		ShortName        interface{} `json:"shortName"`
-// 		SquadMarketValue interface{} `json:"squadMarketValue"`
-// 	} `json:"teams"`
-// }
-
-// func main() {
-// 	resp, err := http.Get("http://api.football-data.org/v1/competitions/467/teams")
-// 	defer resp.Body.Close()
-// 	if err != nil {
-// 		println(err)
-// 	}
-//
-// 	body, err := ioutil.ReadAll(resp.Body)
-//
-// 	if err != nil {
-// 		println(err)
-// 	}
-//
-// 	var football WorldCupTeams
-// 	err = json.Unmarshal(body, &football)
-// 	if err != nil {
-// 		fmt.Printf("%s", err)
-// 	}
-//
-// 	for _, v := range football {
-// 		fmt.Printf("%s ", v.Teams)
-// 	}
-// }
-
 func Teams(w http.ResponseWriter, r *http.Request) {
 	url := "http://api.football-data.org/v1/competitions/467/fixtures?matchday=1"
 	response, err := http.Get(url)
