@@ -6,7 +6,7 @@ import (
 )
 
 func helloWorld(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello World")
+	fmt.Fprint(w, "Welcome, to your Go docker container ", r.RemoteAddr)
 }
 
 func main() {
