@@ -10,8 +10,7 @@ Set $GOPATH
 `export export GOPATH=${HOME}/colza5000/isaiah`
 
 Compile code
-`cd ${HOME}/colza5000/isaiah/src/isaiah
-go install`
+`cd ${HOME}/colza5000/isaiah/src/isaiah ; go install`
 
 Run code
 `${HOME}/colza5000/isaiah/bin/isaiah`
