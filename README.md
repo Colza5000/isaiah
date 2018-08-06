@@ -7,7 +7,7 @@
 Basic go wrapper to spin up webapp with docker
 
 Set $GOPATH
-`export export GOPATH=${HOME}/colza5000/isaiah`
+`export GOPATH=${HOME}/colza5000/isaiah`
 
 Compile code
 `cd ${HOME}/colza5000/isaiah/src/isaiah ; go install`
