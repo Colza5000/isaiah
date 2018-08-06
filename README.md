@@ -6,5 +6,12 @@
 
 Basic go wrapper to spin up webapp with docker
 
-Run `go run main.go`
-- This will spin up a docker container with a `Hello World` app
+Set $GOPATH
+`export export GOPATH=${HOME}/colza5000/isaiah`
+
+Compile code
+`cd ${HOME}/colza5000/isaiah/src/isaiah
+go install`
+
+Run code
+`${HOME}/colza5000/isaiah/bin/isaiah`
